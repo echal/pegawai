@@ -21,6 +21,7 @@ class PegawaiRepository extends ServiceEntityRepository
         return $this->createQueryBuilder('i')
         ->getQuery( )
         ->gitResult()
+        ;
     }
 
 //    /**
