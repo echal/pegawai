@@ -16,6 +16,13 @@ class PegawaiRepository extends ServiceEntityRepository
         parent::__construct($registry, Pegawai::class);
     }
 
+    public function findStatus()
+    {
+        return $this->createQueryBuilder('i')
+        ->getQuery( )
+        ->gitResult()
+    }
+
 //    /**
 //     * @return Pegawai[] Returns an array of Pegawai objects
 //     */
